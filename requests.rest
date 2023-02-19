@@ -1,0 +1,23 @@
+GET http://localhost:8080/
+
+###
+GET http://localhost:8080/users
+
+###
+POST http://localhost:8080/users
+Content-type: application/json
+
+{
+    "name": "Vegard",
+    "password": "password"
+}
+
+###
+POST http://localhost:8080/users/login
+Content-type: application/json
+
+{
+    "name": "Vegard",
+    "password": "password"
+}
+
